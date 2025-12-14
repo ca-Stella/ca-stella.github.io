@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities; */
 
+@theme {
+  --color-cinnamon: #652a0e;
+  --color-lightbrown: #bb6a4c;
+}
+
 
 :root {
   font-family: "Fira Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
