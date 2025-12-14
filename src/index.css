@@ -1,13 +1,13 @@
 @import './styles/fonts.css';
+@import "tailwindcss";
 
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
+@tailwind utilities; */
 
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Fira Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -47,6 +47,11 @@ h1 {
   font-family: 'Modak';
   font-size: 4em;
 }
+
+h2 {
+  font-size: 1.25em;
+}
+
 
 
 button {
