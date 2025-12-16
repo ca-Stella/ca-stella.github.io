@@ -1,9 +1,8 @@
+import { Section } from "../layout/Section";
+
 export default function About() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-white">
-      <div className="max-w-4xl px-6">
-        <h2 className="text-4xl font-semibold mb-8">About me</h2>
-
+    <Section title="About me" className="bg-white">
         <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
           <p>
             I’ve always been fascinated by how we think, make decisions, and
@@ -19,7 +18,6 @@ export default function About() {
             I aspire to bring together logic and creativity to craft thoughtful solutions. By layering ideas and experimenting with different approaches from a variety of fields, I aim to turn complex challenges into something elegant, satisfying, and memorable — like a recipe refined over time.
           </p>
         </div>
-      </div>
-    </section>
+    </Section>
   );
 }

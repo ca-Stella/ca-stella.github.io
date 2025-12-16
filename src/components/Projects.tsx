@@ -1,3 +1,4 @@
+import { Section } from "../layout/Section";
 export default function Projects() {
   // Projects!
 
@@ -27,9 +28,9 @@ export default function Projects() {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center flex-col">
-      <h2 className="text-4xl font-semibold mb-8 ">Featured Projects</h2>
-      <div className="max-w-4xl px-6">
+    <Section title="Featured Projects">
+    
+      <div className="max-w-4xl">
         {projects.map((project) => (
           // <div className="space-y-16">
           <div className={`relative ${project.bgColor} p-10`}>
@@ -44,6 +45,6 @@ export default function Projects() {
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }
