@@ -8,7 +8,7 @@ export default function Projects() {
       description:
         "Interactive dashboard showcasing study habits of four different students.",
       tags: ["Tableau"],
-      bgColor: "bg-rose-100",
+      bgColor: "bg-purple-100",
 
     },
     {
@@ -16,7 +16,7 @@ export default function Projects() {
       description:
         "Online multiplayer board game platform.",
       tags: ["Java", "JavaFX", "Maven", "JUnit", "TestFX"],
-      bgColor: "bg-purple-100",
+      bgColor: "bg-rose-100",
     },
     {
       title: "Skylia - Ongoing",
