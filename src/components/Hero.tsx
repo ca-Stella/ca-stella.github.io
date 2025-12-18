@@ -8,12 +8,12 @@ export default function Hero() {
         initial={{ scale: 0, rotate: -180 }}
         animate={{ scale: 1, rotate: 0 }}
         transition={{ duration: 1, delay: 0.2, type: "spring", bounce: 0.4 }}
-        className="inline-block relative"
+        className="mb-2 inline-block relative"
         style={{ maxWidth: "20%", height: "auto" }}
         src={castella}
       />
 
-      <h1 className="-mb-4 overflow-hidden">
+      <h1 className="overflow-hidden text-7xl">
         {/* For exact gradient and animation combination, I had to hardcode these ;-; */}
         <motion.span
           className="inline-block bg-gradient-to-r from-amber-600 to-[#ea7800] text-transparent bg-clip-text"
