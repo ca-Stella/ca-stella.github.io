@@ -9,12 +9,10 @@ export default function Projects() {
         "Interactive dashboard showcasing study habits of four different students.",
       tags: ["Tableau"],
       bgColor: "bg-purple-100",
-
     },
     {
       title: "Goose Park",
-      description:
-        "Online multiplayer board game platform.",
+      description: "Online multiplayer board game platform.",
       tags: ["Java", "JavaFX", "Maven", "JUnit", "TestFX"],
       bgColor: "bg-sky-100",
     },
@@ -28,11 +26,12 @@ export default function Projects() {
   ];
 
   return (
-    <Section title="Featured Projects">
-    
+    <Section title="Featured projects" className=" px-12">
+      <div className="space-y-6 text-lg text-gray-700 relative">
         {projects.map((project) => (
           // <div className="space-y-16">
-          <div className={`relative ${project.bgColor} p-10`}>
+
+          <div className={`${project.bgColor} p-10`}>
             <h5 className="text-2xl font-semibold mb-4">{project.title}</h5>
 
             <div className="flex gap-3 flex-col">
@@ -43,6 +42,7 @@ export default function Projects() {
             {/* </div> */}
           </div>
         ))}
+      </div>
     </Section>
   );
 }

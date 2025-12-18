@@ -2,8 +2,8 @@ import { Section } from "../layout/Section";
 
 export default function About() {
   return (
-    <Section title="About me" className="bg-white">
-        <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+    <Section title="About me" className="bg-white px-12">
+        <div className="space-y-6 text-lg text-gray-700 relative">
           <p>
             I’ve always been fascinated by how we think, make decisions, and
             experience the world. That curiosity first drew me to neuroscience

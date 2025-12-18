@@ -8,11 +8,15 @@ type SectionProps = {
 
 export function Section({ title, children, className = "" }: SectionProps) {
   return (
-    <section className={`min-h-screen flex items-center justify-center ${className}`}>
-      <div className="px-12 w-full">
+    <section
+      className={`min-h-screen flex flex-col items-center justify-center bg-amber-50 ${className}`}
+      style={{ width: "100vw" }}
+    >
+      <div className="max-w-5xl w-full px-12">
+    
         {title && (
           /* If title exists, render */
-          
+
           <h5 className="text-4xl font-semibold mb-8">{title}</h5>
         )}
         {children}

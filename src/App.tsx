@@ -8,14 +8,13 @@ import StudyDashboard from './projects/StudyDashboard';
 
 export default function App() {
   return (
-    <div className="min-h-screen min-w-screen bg-gradient-to-b from-amber-50 to-orange-50 flex flex-col items-center justify-center">
+    <body className=" overflow-x-hidden">
+    <div className="min-h-screen w-full bg-gradient-to-b from-amber-50 to-orange-50 flex flex-col items-center justify-center grow">
       
     <Hero />
     <About />
     <Projects />
-    <GoosePark />
-    <Skylia />
-    <StudyDashboard />
-    </div>
+
+    </div></body>
   )
 }
