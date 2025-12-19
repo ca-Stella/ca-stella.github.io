@@ -8,13 +8,13 @@ export default function Hero() {
         initial={{ scale: 0, rotate: -180 }}
         animate={{ scale: 1, rotate: 0 }}
         transition={{ duration: 1, delay: 0.2, type: "spring", bounce: 0.4 }}
-        className="mb-2 relative max-w-[15%] min-w-[100px] h-auto"
+        className="mb-2 relative max-w-[20%] min-w-[100px] h-auto"
         src={castella}
       />
 
       <h1
         className="overflow-hidden text-center font-bold
-               text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+               text-6xl sm:text-7xl md:text-7xl lg:text-8xl
                      max-w-full break-words">
         {/* For exact gradient and animation combination, I had to hardcode these ;-; */}
         <motion.span
