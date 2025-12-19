@@ -3,7 +3,7 @@ import { ProjectPage } from "../layout/ProjectPage";
 export default function StudyDashboard() {
   return (
     <ProjectPage
-      title="Study Habit Dashboard"
+      title="Study Pattern Dashboard"
       className="bg-white min-h-screen"
       textEmphasisColor="text-[#a188de]"
     >
