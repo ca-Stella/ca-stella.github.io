@@ -2,6 +2,7 @@ import './App.css'
 import Hero from "./components/Hero";
 import About from './components/About';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 import GoosePark from './projects/GoosePark';
 import Skylia from './projects/Skylia';
 import StudyDashboard from './projects/StudyDashboard';
@@ -14,6 +15,7 @@ export default function App() {
     <Hero />
     <About />
     <Projects />
+    <Contact />
 
     </div></body>
   )
