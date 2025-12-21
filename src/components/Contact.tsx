@@ -9,7 +9,7 @@ export default function Contact() {
       className="min-h-screen max-h-fit flex flex-col items-center bg-white px-12"
       style={{ width: "100vw" }}
     >
-      <div className="w-full px-12 mt-24 mb-8 max-w-5xl">
+      <div className="w-full px-12 mt-24 mb-8 max-w-5xl xl:max-w-7xl">
         <div className="flex flex-row items-center justify-center gap-4 mb-12">
           <motion.span
             // animate={{ scale: [1, 1.1, 1] }}
@@ -36,7 +36,7 @@ export default function Contact() {
           </motion.div>
         </div>
         <div className="flex flex-col items-center gap-8">
-          <div className="px-12 py-8 rounded-3xl border-3 border-yellow-300 shadow-lg justify-center">
+          <div className="px-8 py-8 rounded-3xl border-3 border-yellow-300 shadow-xl justify-center">
             <div className="flex flex-row gap-2  justify-between items-baseline">
               <h5 className="text-2xl font-semibold mb-2">
                 Get in touch with me!{" "}
@@ -59,9 +59,10 @@ export default function Contact() {
               <ContactCard className="border-red-300">
                 <h5 className="text-red-600 font-medium mb-3">Email</h5>
                 <p className="flex flex-row gap-4 mb-2"><School className="text-red-400"/>in.heo@ucalgary.ca</p>
-                <p className="flex flex-row gap-4"><Mail className="text-red-400" />stella.2532@gmail.com</p>
+                <p className="flex flex-row gap-4 mb-2"><Mail className="text-red-400" />stella.2532@gmail.com</p>
 
               </ContactCard>
+              
               <ContactCard className="border-amber-400">
                 <h5 className="text-orange-700 font-medium mb-3">Location</h5>
                 <p className="flex flex-row gap-4 mb-2"><HouseHeart className="text-amber-500"/>Calgary, AB</p>

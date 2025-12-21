@@ -20,3 +20,4 @@ export default function App() {
     </div></body>
   )
 }
+// End: Made using React, Vite, TypeScript, Tailwind CSS, Framer Motion
