@@ -1,5 +1,5 @@
 import { Section } from "../layout/Section";
-import { Heart, Coffee, MessageCircleMore } from "lucide-react";
+import { Heart, Coffee, School, Mail, HouseHeart, MessageCircleMore } from "lucide-react";
 import { easeOut, motion } from "motion/react";
 import { ContactCard } from "../layout/ContactCard";
 
@@ -57,12 +57,14 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-12 w-full">
             <div className="space-y-8 ">
               <ContactCard className="border-red-300">
-                <h5 className="text-red-600 font-medium">Email</h5>
-                <p>in.heo@ucalgary.ca</p>
+                <h5 className="text-red-600 font-medium mb-3">Email</h5>
+                <p className="flex flex-row gap-4 mb-2"><School className="text-red-400"/>in.heo@ucalgary.ca</p>
+                <p className="flex flex-row gap-4"><Mail className="text-red-400" />stella.2532@gmail.com</p>
+
               </ContactCard>
               <ContactCard className="border-amber-400">
-                <h5 className="text-amber-700 font-medium">Location</h5>
-                <p>Calgary, AB</p>
+                <h5 className="text-orange-700 font-medium mb-3">Location</h5>
+                <p className="flex flex-row gap-4 mb-2"><HouseHeart className="text-amber-500"/>Calgary, AB</p>
               </ContactCard>
             </div>
               <div><ContactCard className="">
@@ -76,33 +78,5 @@ export default function Contact() {
       </div>
     </section>
 
-    //   className={`min-h-screen max-h-fit flex flex-col items-center justify-center bg-amber-50 ${className}`}
-    //   style={{ width: "100vw" }}
-    // >
   );
-}
-
-{
-  /*       <div className="max-w-5xl w-full px-12  my-24"></div>
-
-
-  <Section title="Let's talk!" className="bg-white px-12">
-        <span className="absolute animate-flashFace"></span>
-
-        <div className="space-y-6 text-lg text-gray-700 relative">
-          <p>
-            I’ve always been fascinated by how we think, make decisions, and
-            experience the world. That curiosity first drew me to neuroscience
-            and psychology, and now drives my motivation in computer science, where I get to experiment, build, and solve problems at the crossroads of mind, behaviour, and technology.
-          </p>
-
-          <p>
-            For me, programming and analysis aren’t just technical skills. I see data and code as tools to ask questions, uncover patterns, and derive insights from numbers and observations. I enjoy connecting abstract ideas and observations into something tangible, useful, and understandable.
-          </p>
-
-          <p>
-            I aspire to bring together logic and creativity to craft thoughtful solutions. By layering ideas and experimenting with different approaches from a variety of fields, I aim to turn complex challenges into something elegant, satisfying, and memorable — like a recipe refined over time.
-          </p>
-        </div>
-    </Section> */
 }
