@@ -16,10 +16,10 @@ export function Section({ title, children, className = "" }: SectionProps) {
     >
       <div className="max-w-5xl grid xl:grid-cols-6 xl:gap-0 xl:max-w-7xl gap-8 items-center justify-center w-full py-24">
         <motion.div
-          className="max-w-5xl w-full px-12 xl:col-span-2"
-          initial={{ opacity: 0, y: 80 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2, ease: "easeOut" }}
+          className="max-w-5xl w-full px-12 xl:col-span-2 text-center xl:text-end"
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ type:"spring", bounce: 0.5, duration: 1, ease: "easeOut" }}
         >
           {title && (
             /* If title exists, render */
@@ -31,7 +31,7 @@ export function Section({ title, children, className = "" }: SectionProps) {
           className="max-w-5xl w-full px-12 xl:col-span-4"
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2, ease: "easeOut" }}
+          transition={{ delay: 0.05, duration: 0.8, ease: "easeOut" }}
         >
           {children}
         </motion.div>
