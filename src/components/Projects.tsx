@@ -26,7 +26,7 @@ export default function Projects() {
   ];
 
   return (
-    <Section title="Featured projects" className=" px-12">
+    <Section title="Featured projects" className=" px-12" id="projects">
       <div className="space-y-6 text-lg text-gray-700 relative">
         {projects.map((project) => (
           // <div className="space-y-16">

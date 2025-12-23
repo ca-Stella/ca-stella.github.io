@@ -11,7 +11,7 @@ import { ContactCard } from "../layout/ContactCard";
 
 export default function Contact() {
   return (
-    <section
+    <section id="contact"
       className="min-h-screen flex flex-col items-center bg-white px-4 md:px-12"
       style={{ width: "100vw" }}
     >
@@ -83,7 +83,7 @@ export default function Contact() {
             >
               <ContactCard className="border-red-300">
                 <h5 className="text-red-600 font-medium mb-3">Email</h5>
-                <p className="flex flex-row gap-4 items-center">
+                <p className="flex flex-row gap-4 items-center mb-2">
                   <School className="text-red-400" /> in.heo@ucalgary.ca
                 </p>
                 <p className="flex flex-row gap-4 items-center">
