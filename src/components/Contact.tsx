@@ -8,11 +8,13 @@ import {
 } from "lucide-react";
 import { motion } from "motion/react";
 import { ContactCard } from "../layout/ContactCard";
+import { FaGithub } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section id="contact"
-      className="min-h-screen flex flex-col items-center bg-white px-4 md:px-12"
+    <section
+      id="contact"
+      className="pb-36 flex flex-col items-center bg-white px-4 md:px-12"
       style={{ width: "100vw" }}
     >
       {/* Header */}
@@ -105,16 +107,22 @@ export default function Contact() {
               </ContactCard>
             </motion.div>
           </div>
-            <motion.div
-              initial={{ opacity: 0, x: 80 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.1, duration: 0.75, ease: "easeOut" }}
-            >
-          <ContactCard>
-            <h5>Lol</h5>
-            <h5>Lol</h5>
-            <h5>Lol</h5>
-          </ContactCard>
+          <motion.div
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.1, duration: 0.75, ease: "easeOut" }}
+          >
+            <ContactCard>
+              <a
+                href="https://github.com/ca-Stella"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="text-gray-700 hover:text-black transition-colors"
+              >
+                <FaGithub size={24}></FaGithub>
+              </a>
+            </ContactCard>
           </motion.div>
         </div>
       </div>

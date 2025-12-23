@@ -12,7 +12,7 @@ export default function Footer() {
           className="text-center pt-4 border-t-4 border-amber-200/50"
         >
           <p className="text-amber-700 flex items-center justify-center gap-2 flex-wrap">
-            © {new Date().getFullYear()} Ca-Stella. All rights reserved.</p>
+            <img src="src/assets/castella.png" className="inline h-5"/>© {new Date().getFullYear()} Ca-Stella. All rights reserved.</p>
         </motion.div>    
         </footer>
   
