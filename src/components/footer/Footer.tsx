@@ -11,8 +11,9 @@ export default function Footer() {
           transition={{ duration: 0.4, delay: 0.2 }}
           className="text-center pt-4 border-t-4 border-amber-200/50"
         >
-          <p className="text-amber-700 flex items-center justify-center gap-2 flex-wrap">
+          <p className="text-amber-700 flex items-center justify-center gap-2 flex-wrap mb-2">
             <img src="src/assets/castella.png" className="inline h-5"/>© {new Date().getFullYear()} Ca-Stella. All rights reserved.</p>
+        <p className="text-xs text-gray-500 italic">Built with React & Typescript, powered by Vite, styled with Tailwind CSS, and animated using Motion.</p>
         </motion.div>    
         </footer>
   

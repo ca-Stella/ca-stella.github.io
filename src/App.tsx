@@ -5,9 +5,6 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/footer/Footer';
-import GoosePark from './projects/GoosePark';
-import Skylia from './projects/Skylia';
-import StudyDashboard from './projects/StudyDashboard';
 
 export default function App() {
   return (
@@ -24,4 +21,3 @@ export default function App() {
     </div></body>
   )
 }
-// End: Made using React, Vite, TypeScript, Tailwind CSS, Framer Motion
