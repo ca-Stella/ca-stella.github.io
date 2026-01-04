@@ -3,7 +3,7 @@ import { easeOut, motion } from "motion/react";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen w-full max-w-full overflow-x-hidden">
+    <div className="mt-20 flex flex-col justify-center items-center min-h-screen w-full max-w-full overflow-x-hidden rounded-xl">
       <motion.img
         initial={{ scale: 0, rotate: -180 }}
         animate={{ scale: 1, rotate: 0 }}
