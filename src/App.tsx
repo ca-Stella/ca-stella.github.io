@@ -1,5 +1,6 @@
 import './App.css'
-import { Navbar } from './components/nav/Navbar';
+import Navbar from './components/nav/Navbar';
+
 import Hero from "./components/Hero";
 import About from './components/About';
 import Projects from './components/Projects';
