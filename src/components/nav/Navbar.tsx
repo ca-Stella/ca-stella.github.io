@@ -1,16 +1,66 @@
 import { ChefHat, User, Code, Mail } from "lucide-react";
 import { motion } from "motion/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
+  const navItems = [
+    {
+      icon: ChefHat,
+      label: "Home",
+      color: "from-amber-200 to-orange-200",
+      id: "hero",
+    },
+    {
+      icon: User,
+      label: "Skills",
+      color: "from-orange-200 to-yellow-200",
+      id: "about",
+    },
+    {
+      icon: Code,
+      label: "Projects",
+      color: "from-yellow-200 to-amber-200",
+      id: "projects",
+    },
+    {
+      icon: Mail,
+      label: "Contact",
+      color: "from-amber-200 to-orange-200",
+      id: "contact",
+    },
+  ];
+
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const navItems = [
-    { icon: ChefHat, label: "Home", color: "from-amber-200 to-orange-200" },
-    { icon: User, label: "Skills", color: "from-orange-200 to-yellow-200" },
-    { icon: Code, label: "Projects", color: "from-yellow-200 to-amber-200" },
-    { icon: Mail, label: "Contact", color: "from-amber-200 to-orange-200" },
-  ];
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.scrollY + window.innerHeight / 3;
+      navItems.forEach((item, index) => {
+        const el = document.getElementById(item.id);
+        if (el) {
+          const offsetTop = el.offsetTop;
+          const offsetBottom = offsetTop + el.offsetHeight;
+          if (scrollPos >= offsetTop && scrollPos < offsetBottom) {
+            setActiveIndex(index);
+          }
+        }
+      });
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // initialize on load
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Scroll to section when button clicked
+  const handleClick = (index) => {
+    setActiveIndex(index);
+    const el = document.getElementById(navItems[index].id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
 
   return (
     <nav
@@ -23,20 +73,13 @@ export default function Navbar() {
         {navItems.map((item, index) => (
           <motion.button
             key={index}
-            onClick={() => {
-              setActiveIndex(index);
-              const sectionIds = ["hero", "about", "projects", "contact"];
-              const el = document.getElementById(sectionIds[index]);
-              if (el) {
-                el.scrollIntoView({ behavior: "smooth", block: "start" });
-              }
-            }}
+            onClick={() => handleClick(index)}
             className="relative w-14 h-14 flex items-center justify-center rounded-full p-0 outline-none focus:outline-none bg-transparent"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
           >
-            {/* Gradient background for active button */}
-            {activeIndex === index && (
+            {/* If active index is the item's index, show gradient background on button */}
+            { activeIndex === index && (
               <motion.div
                 layoutId="activeBackground"
                 className={`absolute inset-0 rounded-full bg-gradient-to-r ${item.color} z-0`}
@@ -44,7 +87,6 @@ export default function Navbar() {
               />
             )}
 
-            {/* Icon */}
             <item.icon
               className={`w-10 h-10 z-10 ${
                 activeIndex === index ? "text-amber-800" : "text-amber-600"
