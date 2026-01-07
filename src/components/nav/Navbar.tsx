@@ -1,6 +1,6 @@
 import { ChefHat, User, Code, Mail } from "lucide-react";
 import { motion } from "motion/react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Navbar() {
   const navItems = [
@@ -31,30 +31,40 @@ export default function Navbar() {
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const observerRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPos = window.scrollY + window.innerHeight / 3;
-      navItems.forEach((item, index) => {
-        const el = document.getElementById(item.id);
-        if (el) {
-          const offsetTop = el.offsetTop;
-          const offsetBottom = offsetTop + el.offsetHeight;
-          if (scrollPos >= offsetTop && scrollPos < offsetBottom) {
+    const options = {
+      root: null, // viewport
+      rootMargin: "-50% 0px -50% 0px", // trigger when section is roughly in middle
+      threshold: 0,
+    };
+
+    observerRef.current = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const index = navItems.findIndex((item) => item.id === entry.target.id);
+          if (index !== -1) {
             setActiveIndex(index);
           }
         }
       });
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll(); // initialize on load
+    }, options);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    navItems.forEach((item) => {
+      const el = document.getElementById(item.id);
+      if (el) observerRef.current.observe(el);
+    });
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
   }, []);
 
   // Scroll to section when button clicked
   const handleClick = (index) => {
-    setActiveIndex(index);
     const el = document.getElementById(navItems[index].id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
