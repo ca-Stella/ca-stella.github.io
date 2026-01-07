@@ -14,12 +14,12 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="pb-36 flex flex-col items-center bg-white px-4 md:px-12"
-      style={{ width: "100vw" }}
+      className="pb-36 flex flex-col items-center bg-white px-4 md:px-12 max-w-5xl w-full"
+      style={{ width: "100vw" }} 
     >
       {/* Header */}
       <motion.div
-        className="w-full max-w-5xl mt-24 text-center"
+        className="w-full max-w-5xl mt-24 px-12 text-center"
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
         transition={{ type: "spring", bounce: 0.5, duration: 1 }}
@@ -51,10 +51,11 @@ export default function Contact() {
         </div>
       </motion.div>
 
-      <div className="flex flex-col items-center gap-8 w-full max-w-5xl">
+      <div className="px-12 flex flex-col items-center gap-8 max-w-5xl w-full">
+
         {/* Get in touch card */}
         <motion.div
-          className="w-full px-6 py-6 md:px-8 md:py-8 rounded-3xl border-3 border-yellow-300 shadow-xl"
+          className="w-full py-6 px-12 md:px-8 md:py-8 rounded-3xl border-3 border-yellow-300 shadow-xl"
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.05, duration: 0.8, ease: "easeOut" }}
@@ -97,7 +98,7 @@ export default function Contact() {
             <motion.div
               initial={{ opacity: 0, x: -80 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4, duration: 0.45, ease: "easeOut" }}
+              transition={{ delay: 0.3, duration: 0.45, ease: "easeOut" }}
             >
               <ContactCard className="border-amber-400">
                 <h5 className="text-orange-700 font-medium mb-3">Location</h5>
