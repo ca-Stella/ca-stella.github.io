@@ -112,7 +112,9 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.1, duration: 0.75, ease: "easeOut" }}
           >
-            <ContactCard>
+            <ContactCard className="border-[#cdb3eb]">
+              <h5 className="text-[#a478d5] font-medium mb-3">Ohter contact methods</h5>
+              <div className="flex flex-row">
               <motion.a
                 href="https://github.com/ca-Stella"
                 className="relative w-14 h-14 flex items-center justify-center rounded-full p-0 outline-none focus:outline-none bg-transparent text-gray-800"
@@ -129,6 +131,7 @@ export default function Contact() {
               >
                 <FaDiscord size={24} />
               </motion.a>
+              </div>
             </ContactCard>
           </motion.div>
         </div>
