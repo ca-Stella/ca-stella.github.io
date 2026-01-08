@@ -8,14 +8,14 @@ import {
 } from "lucide-react";
 import { motion } from "motion/react";
 import { ContactCard } from "../layout/ContactCard";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaDiscord } from "react-icons/fa";
 
 export default function Contact() {
   return (
     <section
       id="contact"
       className="pb-36 flex flex-col items-center bg-white px-4 md:px-12 max-w-5xl w-full"
-      style={{ width: "100vw" }} 
+      style={{ width: "100vw" }}
     >
       {/* Header */}
       <motion.div
@@ -52,7 +52,6 @@ export default function Contact() {
       </motion.div>
 
       <div className="px-12 flex flex-col items-center gap-8 max-w-5xl w-full">
-
         {/* Get in touch card */}
         <motion.div
           className="w-full py-6 px-12 md:px-8 md:py-8 rounded-3xl border-3 border-yellow-300 shadow-xl"
@@ -114,15 +113,22 @@ export default function Contact() {
             transition={{ delay: 0.1, duration: 0.75, ease: "easeOut" }}
           >
             <ContactCard>
-              <a
+              <motion.a
                 href="https://github.com/ca-Stella"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                className="text-gray-700 hover:text-black transition-colors"
+                className="relative w-14 h-14 flex items-center justify-center rounded-full p-0 outline-none focus:outline-none bg-transparent text-gray-800"
+                whileHover={{ scale: 1.6, color: "#7C3AED" }}
+                whileTap={{ scale: 1.6, color: "#7C3AED" }}
               >
                 <FaGithub size={24}></FaGithub>
-              </a>
+              </motion.a>
+              <motion.a
+                href="https://discord.com/users/stella2532"
+                className="relative w-14 h-14 flex items-center justify-center rounded-full p-0 outline-none focus:outline-none bg-transparent text-gray-800"
+                whileHover={{ scale: 1.6, color: "#5865F2" }}
+                whileTap={{ scale: 1.6, color: "#5865F2" }}
+              >
+                <FaDiscord size={24} />
+              </motion.a>
             </ContactCard>
           </motion.div>
         </div>
