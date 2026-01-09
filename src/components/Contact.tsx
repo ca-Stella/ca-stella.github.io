@@ -10,13 +10,17 @@ import { motion } from "motion/react";
 import { ContactCard } from "../layout/ContactCard";
 import { FaGithub, FaDiscord } from "react-icons/fa";
 
+
 export default function Contact() {
   return (
+    <>
     <section
       id="contact"
-      className="pb-36 flex flex-col items-center bg-white px-4 md:px-12 max-w-5xl w-full"
+      className="pb-36 -mt-20 xl:-mt-30 flex flex-col items-center bg-white md:px-12 w-full"
       style={{ width: "100vw" }}
     >
+
+
       {/* Header */}
       <motion.div
         className="w-full max-w-5xl mt-24 px-12 text-center"
@@ -113,11 +117,11 @@ export default function Contact() {
             transition={{ delay: 0.1, duration: 0.75, ease: "easeOut" }}
           >
             <ContactCard className="border-[#cdb3eb]">
-              <h5 className="text-[#a478d5] font-medium mb-3">Ohter contact methods</h5>
-              <div className="flex flex-row">
+              <h5 className="text-[#a478d5] font-medium mb-1">Ohter Links</h5>
+              <div className="flex flex-row gap-1">
               <motion.a
                 href="https://github.com/ca-Stella"
-                className="relative w-14 h-14 flex items-center justify-center rounded-full p-0 outline-none focus:outline-none bg-transparent text-gray-800"
+                className="relative w-14 h-14 flex items-center -ml-3.5 justify-center rounded-full p-0 outline-none focus:outline-none bg-transparent text-gray-800"
                 whileHover={{ scale: 1.6, color: "#7C3AED" }}
                 whileTap={{ scale: 1.6, color: "#7C3AED" }}
               >
@@ -137,5 +141,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  );
-}
+  </>
+  )};
