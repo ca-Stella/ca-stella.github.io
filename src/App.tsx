@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/footer/Footer';
 import Wave
- from './layout/wave';
+ from './layout/Wave';
 export default function App() {
   return (
     <body className=" overflow-x-hidden">

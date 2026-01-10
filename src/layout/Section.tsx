@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { easeOut, motion } from "motion/react";
+import { motion } from "motion/react";
 
 type SectionProps = {
   title?: string;

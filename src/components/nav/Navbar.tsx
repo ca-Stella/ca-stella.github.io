@@ -31,8 +31,7 @@ export default function Navbar() {
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
-  const observerRef = useRef(null);
-
+  const observerRef = useRef<IntersectionObserver | null>(null);
   useEffect(() => {
     const options = {
       root: null, // viewport
@@ -43,7 +42,9 @@ export default function Navbar() {
     observerRef.current = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const index = navItems.findIndex((item) => item.id === entry.target.id);
+          const index = navItems.findIndex(
+            (item) => item.id === entry.target.id
+          );
           if (index !== -1) {
             setActiveIndex(index);
           }
@@ -53,7 +54,7 @@ export default function Navbar() {
 
     navItems.forEach((item) => {
       const el = document.getElementById(item.id);
-      if (el) observerRef.current.observe(el);
+      if (el) observerRef.current?.observe(el);
     });
 
     return () => {
@@ -64,13 +65,12 @@ export default function Navbar() {
   }, []);
 
   // Scroll to section when button clicked
-  const handleClick = (index) => {
+  const handleClick = (index : number) => {
     const el = document.getElementById(navItems[index].id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
-
 
   return (
     <nav
@@ -89,7 +89,7 @@ export default function Navbar() {
             whileTap={{ scale: 0.8 }}
           >
             {/* If active index is the item's index, show gradient background on button */}
-            { activeIndex === index && (
+            {activeIndex === index && (
               <motion.div
                 layoutId="activeBackground"
                 className={`absolute inset-0 rounded-full bg-gradient-to-r ${item.color} z-0`}
