@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/footer/Footer";
 import Wave from "./layout/Wave";
+import ProjectDetail from "./components/ProjectDetail";
 
 export default function App() {
   useEffect(() => {
@@ -38,7 +39,7 @@ export default function App() {
       </div>
       </>
       }></Route>
-      {/* <Route path="/projects/:slug" element={< />} /> */}
+      <Route path="/projects/:slug" element={< ProjectDetail />} />
     </Routes>
   );
 }
