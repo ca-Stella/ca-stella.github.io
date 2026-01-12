@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { Section } from "../layout/Section";
 export default function Projects() {
   // Projects!
@@ -31,7 +32,15 @@ export default function Projects() {
         {projects.map((project) => (
           // <div className="space-y-16">
 
-          <div className={`${project.bgColor} p-8 rounded-3xl border-3 border-white shadow-lg`}>
+          <motion.div className={`${project.bgColor} p-8 rounded-3xl border-3 border-white shadow-lg`}
+            // onClick={() => handleClick(index)}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{
+                duration: 0.25,
+                // ease: "easeInOut"
+            }}
+          >
             <h5 className="text-2xl font-semibold mb-4">{project.title}</h5>
 
             <div className="flex gap-3 flex-col">
@@ -44,8 +53,7 @@ export default function Projects() {
                     className="px-5 py-1 bg-white/90 text-amber-900 rounded-full text-sm shadow-md border-2 border-yellow-400">{tag}</span>
                 ))}</div>
             </div>
-            {/* </div> */}
-          </div>
+          </motion.div>
         ))}
       </div>
     </Section>
