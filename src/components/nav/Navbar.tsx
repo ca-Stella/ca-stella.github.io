@@ -66,9 +66,15 @@ export default function Navbar() {
 
   // Scroll to section when button clicked
   const handleClick = (index : number) => {
+      const id = navItems[index].id;
+
     const el = document.getElementById(navItems[index].id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      if (history.pushState) {
+      history.pushState(null, "", `/#${id}`);
+    } 
     }
   };
 
