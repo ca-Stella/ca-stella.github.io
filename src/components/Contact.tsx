@@ -125,18 +125,18 @@ export default function Contact() {
               <motion.a
                 href="https://github.com/ca-Stella"
                 className="relative w-14 h-14 flex items-center -ml-3.5 justify-center rounded-full p-0 outline-none focus:outline-none bg-transparent text-gray-800"
-                whileHover={{ scale: 1.6, color: "#7C3AED" }}
-                whileTap={{ scale: 1.6, color: "#7C3AED" }}
+                whileHover={{ scale: 1.4, color: "#7C3AED" }}
+                whileTap={{ scale: 1.4, color: "#7C3AED" }}
               >
-                <FaGithub size={24}></FaGithub>
+                <FaGithub size={30}></FaGithub>
               </motion.a>
               <motion.a
                 href="https://discord.com/users/stella2532"
                 className="relative w-14 h-14 flex items-center justify-center rounded-full p-0 outline-none focus:outline-none bg-transparent text-gray-800"
-                whileHover={{ scale: 1.6, color: "#5865F2" }}
-                whileTap={{ scale: 1.6, color: "#5865F2" }}
+                whileHover={{ scale: 1.4, color: "#5865F2" }}
+                whileTap={{ scale: 1.4, color: "#5865F2" }}
               >
-                <FaDiscord size={24} />
+                <FaDiscord size={30} />
               </motion.a>
               </div>
             </ContactCard>

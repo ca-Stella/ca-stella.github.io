@@ -3,10 +3,14 @@ import { easeOut, motion } from "motion/react";
 
 export default function Hero() {
   return (
-    <div id="hero" className="pt-10 flex flex-col justify-center items-center min-h-screen w-full max-w-full overflow-x-hidden rounded-xl">
+    <div
+      id="hero"
+      className="pt-4 flex flex-col justify-center items-center min-h-screen w-full max-w-full overflow-x-hidden rounded-xl"
+    >
       <motion.img
-        initial={{ scale: 0, rotate: -180 }}
-        animate={{ scale: 1, rotate: 0 }}
+        initial={{ scale: 0, rotate: -180, y: 1}}
+        animate={{ scale: 1, rotate: 0 , y: 1}}
+        whileHover={{ scale: 1.1, y: -8, transition:{duration: 1.2, type: "spring", bounce: 0.7} }}
         transition={{ duration: 1, delay: 0.2, type: "spring", bounce: 0.4 }}
         className="mb-2 relative max-w-[20%] min-w-[100px] h-auto"
         src={castella}
@@ -15,7 +19,8 @@ export default function Hero() {
       <h1
         className="overflow-hidden text-center font-bold
                text-6xl sm:text-7xl md:text-7xl lg:text-8xl
-                     max-w-full break-words">
+                     max-w-full break-words"
+      >
         {/* For exact gradient and animation combination, I had to hardcode these ;-; */}
         <motion.span
           className="inline-block bg-gradient-to-r from-amber-600 to-[#ea7800] text-transparent bg-clip-text"
@@ -26,7 +31,9 @@ export default function Hero() {
             duration: 0.4,
             ease: easeOut,
           }}
-        >C</motion.span>
+        >
+          C
+        </motion.span>
         <motion.span
           className="inline-block bg-gradient-to-r from-[#eb7800] to-[#f37e00] text-transparent bg-clip-text"
           initial={{ opacity: 0, y: 50, rotate: -10 }}
@@ -36,7 +43,9 @@ export default function Hero() {
             duration: 0.4,
             ease: easeOut,
           }}
-        >a</motion.span>
+        >
+          a
+        </motion.span>
         <motion.span
           className="inline-block bg-gradient-to-r from-[#ec7901] to-[#f88200] text-transparent bg-clip-text"
           initial={{ opacity: 0, y: 50, rotate: -10 }}
@@ -59,7 +68,9 @@ export default function Hero() {
             duration: 0.4,
             ease: easeOut,
           }}
-        >S</motion.span>
+        >
+          S
+        </motion.span>
         <motion.span
           className="inline-block bg-gradient-to-r from-[#ff8904] to-[#ff9000] text-transparent bg-clip-text"
           initial={{ opacity: 0, y: 50, rotate: -10 }}
@@ -69,7 +80,9 @@ export default function Hero() {
             duration: 0.4,
             ease: easeOut,
           }}
-        >t</motion.span>
+        >
+          t
+        </motion.span>
         <motion.span
           className="inline-block bg-gradient-to-r from-[#ff9200] to-[#fb9b02] text-transparent bg-clip-text"
           initial={{ opacity: 0, y: 50, rotate: -10 }}
@@ -78,7 +91,10 @@ export default function Hero() {
             delay: 0.85,
             duration: 0.4,
             ease: easeOut,
-          }}>e</motion.span>
+          }}
+        >
+          e
+        </motion.span>
         <motion.span
           className="inline-block bg-gradient-to-r from-[#fb9c01] to-[#f9a100] text-transparent bg-clip-text"
           initial={{ opacity: 0, y: 50, rotate: -10 }}
@@ -87,7 +103,10 @@ export default function Hero() {
             delay: 0.9,
             duration: 0.4,
             ease: easeOut,
-          }}>l</motion.span>
+          }}
+        >
+          l
+        </motion.span>
         <motion.span
           className="inline-block bg-gradient-to-r from-[#f8a203] to-[#f6a600] text-transparent bg-clip-text"
           initial={{ opacity: 0, y: 50, rotate: -10 }}
@@ -97,7 +116,9 @@ export default function Hero() {
             duration: 0.4,
             ease: easeOut,
           }}
-        >l</motion.span>
+        >
+          l
+        </motion.span>
         <motion.span
           className="inline-block bg-gradient-to-r from-[#f5a700] to-yellow-500 text-transparent bg-clip-text"
           initial={{ opacity: 0, y: 50, rotate: -10 }}
@@ -107,7 +128,9 @@ export default function Hero() {
             duration: 0.4,
             ease: easeOut,
           }}
-        >a</motion.span>
+        >
+          a
+        </motion.span>
       </h1>
 
       <motion.h2
