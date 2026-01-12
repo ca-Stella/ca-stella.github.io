@@ -26,6 +26,7 @@ export default function Projects() {
     },
   ];
 
+  // TODO: Add project 
   return (
     <Section title="Featured projects" className=" px-12" id="projects">
       <div className="space-y-6 text-lg text-gray-700 relative">
@@ -46,7 +47,10 @@ export default function Projects() {
             <div className="flex gap-3 flex-col">
               <p className="mb-8">{project.description}</p>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2"
+              // TODO: add hover for tags specifically
+              >
+                
                 {project.tags.map((tag, tagIndex) => (
                     <span
                     key={tagIndex} 
