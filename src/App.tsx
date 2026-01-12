@@ -6,8 +6,8 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/footer/Footer';
-import Wave
- from './layout/Wave';
+import Wave from './layout/Wave';
+
 export default function App() {
   return (
     <body className=" overflow-x-hidden">

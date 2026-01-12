@@ -117,7 +117,7 @@ export default function Contact() {
             transition={{ delay: 0.1, duration: 0.75, ease: "easeOut" }}
           >
             <ContactCard className="border-[#cdb3eb]">
-              <h5 className="text-[#a478d5] font-medium mb-1">Ohter Links</h5>
+              <h5 className="text-[#a478d5] font-medium mb-1">Other Links</h5>
               <div className="flex flex-row gap-1">
               <motion.a
                 href="https://github.com/ca-Stella"
