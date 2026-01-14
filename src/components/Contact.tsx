@@ -32,7 +32,7 @@ export default function Contact() {
           <motion.span
             animate={{ rotate: [15, 0] }}
             transition={{
-              duration: 2,
+              duration: 1,
               repeat: Infinity,
               repeatType: "reverse",
             }}
@@ -45,7 +45,7 @@ export default function Contact() {
           <motion.div
             animate={{ rotate: [0, 15] }}
             transition={{
-              duration: 2,
+              duration: 1,
               repeat: Infinity,
               repeatType: "reverse",
             }}
