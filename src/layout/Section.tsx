@@ -15,8 +15,8 @@ export function Section({ title, children, className = "", id }: SectionProps) {
       //   className={`min-h-screen max-h-fit flex flex-col items-center justify-center bg-amber-50 ${className}`}
       style={{ width: "100vw" }}
     >
-      <div className="max-w-5xl grid xl:grid-cols-6 xl:gap-0 xl:max-w-7xl gap-8 items-center justify-center w-full py-24">
-        <motion.div
+      <motion.div layout className="max-w-5xl grid xl:grid-cols-6 xl:gap-0 xl:max-w-7xl gap-8 items-center justify-center w-full py-24">
+        <motion.div layout
           className="max-w-5xl w-full px-12 xl:col-span-2 text-center xl:text-end"
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
@@ -36,7 +36,7 @@ export function Section({ title, children, className = "", id }: SectionProps) {
         >
           {children}
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 }

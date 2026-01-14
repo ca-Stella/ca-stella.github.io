@@ -4,7 +4,7 @@ export default function About() {
   return (
     <ProjectPage
       title="Skylia"
-      className="bg-white min-h-screen"
+      className="bg-white w-full max-w-full h-auto"
       textEmphasisColor="text-[#EEAAA7]"
     >
       <div className="space-y-6 text-base text-gray-700 leading-relaxed">

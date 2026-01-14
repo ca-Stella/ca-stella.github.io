@@ -4,7 +4,7 @@ export default function StudyDashboard() {
   return (
     <ProjectPage
       title="Study Pattern Dashboard"
-      className="bg-white min-h-screen"
+      className="bg-white w-full max-w-full h-auto"
       textEmphasisColor="text-[#a188de]"
     >
       <div className="space-y-6 text-base text-gray-700 leading-relaxed">
