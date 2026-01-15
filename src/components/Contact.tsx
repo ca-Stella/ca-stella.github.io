@@ -59,9 +59,12 @@ export default function Contact() {
         {/* Get in touch card */}
         <motion.div
           className="w-full py-6 px-12 md:px-8 md:py-8 rounded-3xl border-3 border-yellow-300 shadow-xl"
-          initial={{ opacity: 0, y: 80 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.05, duration: 0.8, ease: "easeOut" }}
+          initial={{ opacity: 0, y: 80, rotate: 0 }}
+          whileInView={{ opacity: 1, y: 0  }}
+          whileHover={{ rotate: -1, scale: 1.04 }}
+          transition={{ delay: 0.05, opacity: { duration: 0.8}, y: {duration: 0.8}, 
+          rotate: {duration: 0.5, type: "spring", bounce: 0.2 }, 
+          scale: {duration: 1, type: "spring", bounce: 0.6 }, ease: "easeOut" }}
         >
           <div className="flex flex-row justify-between items-center mb-4">
             <h5 className="text-2xl font-semibold">Get in touch with me!</h5>
