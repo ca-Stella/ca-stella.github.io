@@ -3,9 +3,9 @@ import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import HomePage from "./components/HomePage"
-import StudyDashboard from "./projects/StudyDashboard"
-import GoosePark from "./projects/GoosePark"
-import Skylia from "./projects/Skylia"
+// import StudyDashboard from "./projects/StudyDashboard"
+// import GoosePark from "./projects/GoosePark"
+// import Skylia from "./projects/Skylia"
 import ComingSoon from "./projects/ComingSoon"
 
 export default function App() {

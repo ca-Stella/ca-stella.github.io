@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "motion/react";
-import { Section } from "../layout/Section";
+// import { Section } from "../layout/Section";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Skylia from "../projects/Skylia";
 import GoosePark from "../projects/GoosePark";
 import StudyDashboard from "../projects/StudyDashboard";
@@ -79,7 +79,7 @@ export default function Projects() {
           }}
         >
           {projects.map((project, i) => {
-            const Expanded = project.expanded;
+            // const Expanded = project.expanded;
             // <div className="space-y-16">
             // <Link
             //   key={project.title}
