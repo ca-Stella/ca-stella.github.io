@@ -33,7 +33,7 @@ export default function HomePage() {
 
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-amber-50 to-orange-50 flex flex-col items-center justify-center grow overflow-x-hidden">
+    <div className="min-h-screen w-full  bg-[#fffbea] flex flex-col items-center justify-center grow overflow-x-hidden">
       <Navbar />
 
       <Hero />

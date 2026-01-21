@@ -56,8 +56,8 @@ export default function Projects() {
   return (
     <>
       <section
-        id="contact"
-        className="pb-36 flex flex-col items-center  md:px-12 w-full -mb-20"
+        id="projects"
+        className="pb-36 flex flex-col items-center sm:px-24 md:px-12 w-full -mb-24"
         style={{ width: "100vw" }}
       >
         <motion.div
