@@ -2,10 +2,11 @@ import { motion, AnimatePresence } from "motion/react";
 // import { Section } from "../layout/Section";
 import { useState } from "react";
 // import { Link } from "react-router-dom";
-import Skylia from "../projects/Skylia";
-import GoosePark from "../projects/GoosePark";
+// import Skylia from "../projects/Skylia";
+// import GoosePark from "../projects/GoosePark";
 import StudyDashboard from "../projects/StudyDashboard";
 import ComingSoon from "../projects/ComingSoon";
+
 export default function Projects() {
   // Projects!
 
@@ -28,7 +29,8 @@ export default function Projects() {
       bgColor: "bg-sky-100",
       slug: "goose-park",
       fileName: "GoosePark",
-      expanded: GoosePark,
+    //   expanded: GoosePark,
+      expanded: ComingSoon,
     },
     {
       title: "Skylia",
@@ -38,7 +40,7 @@ export default function Projects() {
       bgColor: "bg-rose-100",
       slug: "skylia",
       fileName: "Skylia",
-      expanded: Skylia,
+      expanded: ComingSoon,
     },
   ];
 
@@ -148,9 +150,9 @@ export default function Projects() {
                         opacity: { duration: 0.25 },
                       }}
                     >
-                      {/* <Expanded /> */}
+                      <project.expanded />
                       <div>
-                        <ComingSoon />
+                        {/* <ComingSoon /> */}
                       </div>
                     </motion.div>
                   )}
