@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import HomePage from "./components/HomePage"
-// import StudyDashboard from "./projects/StudyDashboard"
+import StudyDashboard from "./projects/StudyDashboard"
 // import GoosePark from "./projects/GoosePark"
 // import Skylia from "./projects/Skylia"
 import ComingSoon from "./projects/ComingSoon"
@@ -26,8 +26,8 @@ export default function App() {
       <Route path="/projects/skylia" element={<ComingSoon />} />
       {/* <Route path="/projects/goose-park" element={<GoosePark />} /> */}
       <Route path="/projects/goose-park" element={<ComingSoon />} />
-      {/* <Route path="/projects/study-dashboard" element={<StudyDashboard />} /> */}
-      <Route path="/projects/study-dashboard" element={<ComingSoon />} />
+      <Route path="/projects/study-dashboard" element={<StudyDashboard />} />
+      {/* <Route path="/projects/study-dashboard" element={<ComingSoon />} /> */}
     </Routes>
   );
 }

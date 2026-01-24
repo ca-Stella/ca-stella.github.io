@@ -59,11 +59,11 @@ export default function Projects() {
     <>
       <section
         id="projects"
-        className="pb-36 flex flex-col items-center sm:px-24 md:px-12 w-full -mb-24"
+        className="pb-36 flex flex-col items-center sm:px-24 md:px-12 -mb-24"
         style={{ width: "100vw" }}
       >
         <motion.div
-          className="w-full max-w-6xl mt-24 mb-8 text-center"
+          className="max-w-6xl mt-24 mb-8 text-center"
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ type: "spring", bounce: 0.5, duration: 1 }}
@@ -89,10 +89,11 @@ export default function Projects() {
             //   className="block"
             // >
             return (
-              <div key={project.slug} className="col-span-full w-full">
+              <div key={project.slug} className="col-span-full sm:w-full max-w-[80vw] min-w-[80vw]
+              ">
                 <motion.div
                   key={i}
-                  className={`${project.bgColor} p-8 w-full rounded-3xl border-3 border-white shadow-lg z-10 relative`}
+                  className={`${project.bgColor} p-8 rounded-3xl border-3 border-white shadow-lg z-10 relative`}
                   // onClick={() => alert("Coming soon! 😔")}
                   onClick={() => clickCard(i)}
                   initial={{opacity:0, y:80}}
@@ -141,7 +142,7 @@ export default function Projects() {
                 <AnimatePresence>
                   {cardActives[i] && (
                     <motion.div
-                      className="mt-4 rounded-2xl bg-gray-50 shadow-md w-full z-0 origin-top"
+                      className="mt-4 rounded-2xl bg-gray-50 shadow-md z-0 origin-top"
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
