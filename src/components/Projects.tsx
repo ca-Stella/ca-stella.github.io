@@ -4,6 +4,7 @@ import { useState } from "react";
 // import { Link } from "react-router-dom";
 // import Skylia from "../projects/Skylia";
 // import GoosePark from "../projects/GoosePark";
+import Cognia from "../projects/Cognia";
 import StudyDashboard from "../projects/StudyDashboard";
 import ComingSoon from "../projects/ComingSoon";
 
@@ -41,6 +42,16 @@ export default function Projects() {
       slug: "skylia",
       fileName: "Skylia",
       expanded: ComingSoon,
+    },
+    {
+      title: "Cognia Notes",
+      description:
+        "Note taking app to make your learning convenient!",
+      tags: ["Swift", "SwiftUI", "UIKit", "PencilKit"],
+      bgColor: "bg-light-green",
+      slug: "cognia",
+      fileName: "Cognia",
+      expanded: Cognia,
     },
   ];
 
@@ -142,7 +153,7 @@ export default function Projects() {
                 <AnimatePresence>
                   {cardActives[i] && (
                     <motion.div
-                      className="mt-4 rounded-2xl bg-gray-50 shadow-md z-0 origin-top"
+                      className="mt-4 rounded-5xl bg-none z-0 origin-top"
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}

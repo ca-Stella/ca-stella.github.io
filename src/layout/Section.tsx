@@ -11,7 +11,7 @@ type SectionProps = {
 export function Section({ title, children, className = "", id }: SectionProps) {
   return (
     <section
-      className={`max-h-fit flex flex-col items-center bg-amber-50 ${className}`} id={id}
+      className={`max-h-fit flex flex-col items-center bg-amber-50  ${className}`} id={id}
       //   className={`min-h-screen max-h-fit flex flex-col items-center justify-center bg-amber-50 ${className}`}
       style={{ width: "100vw" }}
     >

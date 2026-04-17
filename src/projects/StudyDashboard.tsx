@@ -83,7 +83,7 @@ export default function StudyDashboard() {
       className="bg-white h-auto"
       textEmphasisColor="text-[#a188de]"
     >
-      <div className="space-y-6 text-base text-gray-700 leading-relaxed">
+      <div className="w-full max-w-5xl p-6 flex flex-col gap-5 items-start justify-center space-y-6 text-base text-gray-700 leading-relaxed pb-16">
         <p>
           I designed and developed an interactive analytics dashboard using Tableau to analyze and compare study patterns through subjective experiences and objective measures across four students throughout a semester. The goal of this project was to uncover study habits and patterns of each student that may influence our academic productivity and wellbeing.
         </p>

@@ -7,6 +7,7 @@ import StudyDashboard from "./projects/StudyDashboard"
 // import GoosePark from "./projects/GoosePark"
 // import Skylia from "./projects/Skylia"
 import ComingSoon from "./projects/ComingSoon"
+import Cognia from "./projects/Cognia"
 
 export default function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ export default function App() {
       {/* <Route path="/projects/goose-park" element={<GoosePark />} /> */}
       <Route path="/projects/goose-park" element={<ComingSoon />} />
       <Route path="/projects/study-dashboard" element={<StudyDashboard />} />
+      <Route path="/projects/cognia" element={<Cognia />} />
       {/* <Route path="/projects/study-dashboard" element={<ComingSoon />} /> */}
     </Routes>
   );
