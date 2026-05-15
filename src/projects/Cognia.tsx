@@ -1,12 +1,9 @@
 import { ProjectPage } from "../layout/ProjectPage";
-import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { parts } from "./CogniaParts";
 import "../styles/index.css";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+
 // import "swiper/swiper-bundle.min.css";
 // import "swiper/swiper.min.css";
 // import "swiper/modules/navigation.min.css";
