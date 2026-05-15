@@ -7,7 +7,7 @@ type ProjectPageProps = {
   textEmphasisColor: string;
 };
 
-export function ProjectPage({ title, children, className = "", textEmphasisColor }: ProjectPageProps) {
+export function ProjectPage({ children, className = "", textEmphasisColor }: ProjectPageProps) {
   return (
     // section had  w-full; div had  w-full max- w-full
     <section className={`rounded-4xl py-8 pb-8 flex  shadow-md ${className} ${textEmphasisColor}`}>
