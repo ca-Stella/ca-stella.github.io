@@ -7,6 +7,7 @@ import { useState } from "react";
 import Cognia from "../projects/Cognia";
 import StudyDashboard from "../projects/StudyDashboard";
 import ComingSoon from "../projects/ComingSoon";
+import { Section } from "../layout/Section";
 
 export default function Projects() {
   // Projects!
@@ -67,10 +68,9 @@ export default function Projects() {
   };
   // TODO: Add project
   return (
-      <section
+      <Section
         id="projects"
         className="pb-36 flex flex-col items-center sm:px-24 md:px-12 -mb-24"
-        style={{ width: "100vw" }}
       >
         <motion.div
           className="max-w-6xl mt-24 mb-8 text-center"
@@ -173,6 +173,6 @@ export default function Projects() {
             );
           })}
         </motion.div>
-      </section>
+      </Section>
   );
 }
