@@ -5,7 +5,7 @@ import "./App.css";
 import HomePage from "./components/HomePage"
 import StudyDashboard from "./projects/StudyDashboard"
 // import GoosePark from "./projects/GoosePark"
-// import Skylia from "./projects/Skylia"
+// import EaseTrace from "./projects/EaseTrace"
 import ComingSoon from "./projects/ComingSoon"
 import Cognia from "./projects/Cognia"
 
@@ -24,7 +24,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       {/* <Route path="/projects/skylia" element={<Skylia />} /> */}
-      <Route path="/projects/skylia" element={<ComingSoon />} />
+      <Route path="/projects/easetrace" element={<ComingSoon />} />
       {/* <Route path="/projects/goose-park" element={<GoosePark />} /> */}
       <Route path="/projects/goose-park" element={<ComingSoon />} />
       <Route path="/projects/study-dashboard" element={<StudyDashboard />} />

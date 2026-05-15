@@ -1,4 +1,4 @@
-import type { ProjectPart } from "./types";
+import type { ProjectPart } from "../layout/ProjectPart";
 
 export const parts: ProjectPart[] = [
   {

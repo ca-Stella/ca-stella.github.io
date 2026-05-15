@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "motion/react";
 // import { Section } from "../layout/Section";
 import { useState } from "react";
 // import { Link } from "react-router-dom";
-// import Skylia from "../projects/Skylia";
+// import EaseTrace from "../projects/EaseTrace";
 // import GoosePark from "../projects/GoosePark";
 import Cognia from "../projects/Cognia";
 import StudyDashboard from "../projects/StudyDashboard";
@@ -34,13 +34,13 @@ export default function Projects() {
       expanded: ComingSoon,
     },
     {
-      title: "Skylia",
+      title: "EaseTrace",
       description:
         "Day-to-day symptom tracker, exploring its connection to your environment.",
       tags: ["Typescript", "Next.js", "TailwindCSS", "Vite"],
       bgColor: "bg-rose-100",
-      slug: "skylia",
-      fileName: "Skylia",
+      slug: "easetrace",
+      fileName: "EaseTrace",
       expanded: ComingSoon,
     },
     {
@@ -67,7 +67,6 @@ export default function Projects() {
   };
   // TODO: Add project
   return (
-    <>
       <section
         id="projects"
         className="pb-36 flex flex-col items-center sm:px-24 md:px-12 -mb-24"
@@ -174,7 +173,6 @@ export default function Projects() {
             );
           })}
         </motion.div>
-      </section>{" "}
-    </>
+      </section>
   );
 }
