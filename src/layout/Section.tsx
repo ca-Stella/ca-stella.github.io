@@ -17,7 +17,7 @@ export function Section({ title, children, className = "", id }: SectionProps) {
     >
       <motion.div layout className="max-w-5xl grid xl:grid-cols-6 xl:gap-0 xl:max-w-7xl gap-8 items-center justify-center w-full py-24">
         <motion.div layout
-          className="max-w-5xl w-full px-12 xl:col-span-2 text-center xl:text-end"
+          className="max-w-5xl w-full px-12 xl:col-span-2 text-center"
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ type:"spring", bounce: 0.5, duration: 1, ease: "easeOut" }}
@@ -25,7 +25,7 @@ export function Section({ title, children, className = "", id }: SectionProps) {
           {title && (
             /* If title exists, render */
 
-            <h5 className="text-4xl font-semibold">{title}</h5>
+            <h5 className="text-4xl font-semibold  xl:text-end">{title}</h5>
           )}
         </motion.div>
         <motion.div

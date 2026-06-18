@@ -7,7 +7,6 @@ import { useState } from "react";
 import Cognia from "../projects/Cognia";
 import StudyDashboard from "../projects/StudyDashboard";
 import ComingSoon from "../projects/ComingSoon";
-import { Section } from "../layout/Section";
 import GoosePark from "../projects/GoosePark";
 
 export default function Projects() {
@@ -69,9 +68,9 @@ export default function Projects() {
   };
   // TODO: Add project
   return (
-      <Section
+      <section
         id="projects"
-        className="pb-36 flex flex-col items-center sm:px-24 md:px-12 -mb-24"
+        className="pb-36 items-center sm:px-24 md:px-12 xl:px-0 -mb-24"
       >
         <motion.div
           className="max-w-6xl mt-24 mb-8 text-center"
@@ -100,8 +99,7 @@ export default function Projects() {
             //   className="block"
             // >
             return (
-              <div key={project.slug} className="col-span-full sm:w-full max-w-[80vw] min-w-[80vw]
-              ">
+              <div key={project.slug} className="col-span-full w-full max-w-[80vw] min-w-[80vw]">
                 <motion.div
                   key={i}
                   className={`${project.bgColor} p-8 rounded-3xl border-3 border-white shadow-lg z-10 relative`}
@@ -174,6 +172,6 @@ export default function Projects() {
             );
           })}
         </motion.div>
-      </Section>
+      </section>
   );
 }
