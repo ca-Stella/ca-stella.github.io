@@ -8,6 +8,7 @@ import Cognia from "../projects/Cognia";
 import StudyDashboard from "../projects/StudyDashboard";
 import ComingSoon from "../projects/ComingSoon";
 import { Section } from "../layout/Section";
+import GoosePark from "../projects/GoosePark";
 
 export default function Projects() {
   // Projects!
@@ -32,7 +33,7 @@ export default function Projects() {
       slug: "goose-park",
       fileName: "GoosePark",
     //   expanded: GoosePark,
-      expanded: ComingSoon,
+      expanded: GoosePark,
     },
     {
       title: "EaseTrace",
