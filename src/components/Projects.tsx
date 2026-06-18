@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 // import { Link } from "react-router-dom";
 // import EaseTrace from "../projects/EaseTrace";
-// import GoosePark from "../projects/GoosePark";
-import Cognia from "../projects/Cognia";
+import EasyRoomie from "../projects/EasyRoomie";
+// import Cognia from "../projects/Cognia";
 import StudyDashboard from "../projects/StudyDashboard";
 import ComingSoon from "../projects/ComingSoon";
 import GoosePark from "../projects/GoosePark";
@@ -45,15 +45,25 @@ export default function Projects() {
       expanded: ComingSoon,
     },
     {
-      title: "Cognia Notes",
+      title: "EasyRoomie",
       description:
-        "Note taking app to make your learning convenient!",
+        "Student-focused housing platform connecting landlords, tenants, and compatible roommates!",
       tags: ["Swift", "SwiftUI", "UIKit", "PencilKit"],
       bgColor: "bg-light-green",
-      slug: "cognia",
-      fileName: "Cognia",
-      expanded: Cognia,
+      slug: "easyroomie",
+      fileName: "EasyRoomie",
+      expanded: EasyRoomie,
     },
+    // {
+    //   title: "Cognia Notes",
+    //   description:
+    //     "Note taking app to make your learning convenient!",
+    //   tags: ["Swift", "SwiftUI", "UIKit", "PencilKit"],
+    //   bgColor: "bg-light-green",
+    //   slug: "cognia",
+    //   fileName: "Cognia",
+    //   expanded: Cognia,
+    // },
   ];
 
   const [cardActives, setCardActives] = useState(
