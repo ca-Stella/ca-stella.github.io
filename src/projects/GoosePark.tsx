@@ -10,7 +10,7 @@ export default function GoosePark() {
       className="bg-white w-full max-w-full h-auto"
       textEmphasisColor="text-[#87d3de]"
     >
-      <div className="w-full max-w-5xl p-6 flex flex-col gap-2 items-start justify-center space-y-6 text-base text-gray-700 leading-relaxed pb-4">
+      <div className="w-full max-w-5xl p-6 flex flex-col gap-2 items-start justify-center space-y-6 text-base text-gray-700 leading-relaxed pb-4 pt-0">
         <img src={GooseParkTitle} className="mx-auto" width="70%" height="auto" alt="Goose Park Title Page" />
         <p>
           Goose Park is an Online Multiplayer Board Game Platform (OmG). Join us with your friends and play engaging and fun games with one another! Chat while playing with other geese, who you can either challenge or meet in the park by joining the queue. Compare your stats with other geese using the leaderboard, and personalize your avatar and your profile!
