@@ -15,12 +15,24 @@ export default function GoosePark() {
         <p>
           Goose Park is an Online Multiplayer Board Game Platform (OmG). Join us with your friends and play engaging and fun games with one another! Chat while playing with other geese, who you can either challenge or meet in the park by joining the queue. Compare your stats with other geese using the leaderboard, and personalize your avatar and your profile!
         </p>
-        <img src={GooseParkUI} className="mx-auto" width="70%" height="auto" alt="Goose Park Game Select Page" />
 
-        <p>
-          Goose Park currently supports three games: Tic-tac-toe, Connect 4, and Chess. Of those games, I took part in designing and developing tic-tac-toe. Our tic-tac-toe game takes the traditional tic-tac-toe to another level! Made up of nine tic-tac-toe boards in a 3 x 3 grid, take turns placing pieces onto the smaller tic-tac-toe boards. Players can make a move on a board in the 9x9 board to make the opponent play on the tic-tac-toe board at that position. Winning on one board swaps that board with a random board, and the player who marks a horizontal, vertical, or diagonal line with their respective symbol wins!
-        </p>
         <img src={GooseParkTTT} className="mx-auto" width="60%" height="auto" alt="Goose Park Tic-tac-toe" />
+        
+        <p>
+          Developed as part of a team project, Goose Park supports multiple games including Chess, Connect 4, and Tic-Tac-Toe. One of my primary contribution was the design and implementation of a unique multiplayer variation of Tic-Tac-Toe. Rather than using a traditional 3×3 board, the game consists of nine interconnected Tic-Tac-Toe boards arranged in a larger grid. Players' moves determine which board their opponent must play on next, introducing an additional layer of strategy and decision-making.
+        </p>
+        <p>
+          To further differentiate the gameplay, winning a board causes it to be replaced by a randomly selected board, creating a dynamic game state that evolves throughout the match. Players must continuously adapt their strategies while attempting to secure a winning row, column, or diagonal across the larger board. Implementing these mechanics required careful game-state management, rule validation, and multiplayer synchronization to ensure a smooth and consistent experience for all players.
+        </p>
+
+
+        <img src={GooseParkUI} className="mx-auto" width="70%" height="auto" alt="Goose Park Game Select Page" />
+        <p>
+          In addition to developing game features, I designed and implemented the majority of the application's user interface using JavaFX, creating a cohesive experience across menus, matchmaking, profiles, leaderboards, and gameplay screens.
+        </p>
+        <p>
+          Through this project, I gained experience working with Java, JavaFX, Maven, JUnit, and TestFX while collaborating within a larger development team. The project strengthened my skills in object-oriented design, game logic implementation, testing, and building interactive user experiences for multiplayer applications.        
+        </p>
 
       </div>
     </ProjectPage>
