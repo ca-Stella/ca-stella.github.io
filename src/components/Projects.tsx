@@ -48,7 +48,7 @@ export default function Projects() {
       title: "EasyRoomie",
       description:
         "Student-focused housing platform connecting landlords, tenants, and compatible roommates!",
-      tags: ["Swift", "SwiftUI", "UIKit", "PencilKit"],
+      tags: ["React", "Vite", "Django", "Python", "Javascript", "MySQL"],
       bgColor: "bg-light-green",
       slug: "easyroomie",
       fileName: "EasyRoomie",
