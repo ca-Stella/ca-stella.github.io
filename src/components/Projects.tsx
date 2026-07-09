@@ -38,7 +38,7 @@ export default function Projects() {
       title: "EaseTrace",
       description:
         "Day-to-day symptom tracker, exploring its connection to your environment.",
-      tags: ["Typescript", "Next.js", "TailwindCSS", "Vite"],
+      tags: ["Typescript", "React Native", "Supabase", "TailwindCSS", "Vite"],
       bgColor: "bg-rose-100",
       slug: "easetrace",
       fileName: "EaseTrace",
